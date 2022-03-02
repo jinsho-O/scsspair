@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,OAAO,CAAC;EACN,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;CACd",
+    "sources": [
+        "../../style.scss",
+        "../../_garalley.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
