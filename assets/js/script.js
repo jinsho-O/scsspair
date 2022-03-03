@@ -21,7 +21,6 @@ $(function(){
     },
   });
 
-<<<<<<< HEAD
   // ここから初めのアニメーション
   setTimeout(function () {
     $('.start p').fadeIn(1600);
@@ -42,27 +41,22 @@ $(function(){
     $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
   });
   //ハンバーガー終わり
-  
-  
-  
-})
-=======
   // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+  // pagination: {
+  //   el: '.swiper-pagination',
+  // },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+  // // Navigation arrows
+  // navigation: {
+  //   nextEl: '.swiper-button-next',
+  //   prevEl: '.swiper-button-prev',
+  // },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
+  // // And if we need scrollbar
+  // scrollbar: {
+  //   el: '.swiper-scrollbar',
+  // },
+
 const swiper2 = new Swiper('.swiper2', {
   // Optional parameters
   direction: 'horizontal',
@@ -84,7 +78,6 @@ const swiper2 = new Swiper('.swiper2', {
     el: '.swiper-scrollbar',
   },
 });
-$(function () {
   $('.slider').slick({
     autoplay: true, //自動スクロール
     autoplaySpeed: 0, //自動再生時のスライド切り替えの時間
@@ -96,5 +89,4 @@ $(function () {
     pauseOnFocus: false, //フォーカスしても止めない
     pauseOnHover: false, //マウスホバーしても止めない
   });
-});
->>>>>>> 7c2c6f0edff6424dcde568fed24ba34b280c9a1a
+})
