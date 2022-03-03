@@ -135,6 +135,7 @@ opacity: 0;
  }
 /* ハンバーガーここまで */
 
+
 .start{
 	background: #FFF;
 	position: fixed;
@@ -160,6 +161,22 @@ opacity: 0;
 	display: none;
 	z-index: 9999;
 	width: 70%;
+}
+
+#Top{
+  width: 100%;
+}
+.text-box{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 30px;
+}
+.img-box{
+  width: 40%;
+}
+#Introduce{
+  display: flex;
 }
 
 .swiper {

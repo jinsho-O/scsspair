@@ -1,1 +1,17 @@
 @import "garalley";
+#Top{
+    width: 100%;
+}
+.text-box{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 30px;
+}
+.img-box{
+    width: 40%;
+}
+#Introduce{
+    display: flex;
+}
+
