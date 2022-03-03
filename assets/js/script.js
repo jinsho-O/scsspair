@@ -21,7 +21,7 @@ $(function(){
     },
   });
 
-<<<<<<< HEAD
+
   // ここから初めのアニメーション
   setTimeout(function () {
     $('.start p').fadeIn(1600);
@@ -46,23 +46,6 @@ $(function(){
   
   
 })
-=======
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
 const swiper2 = new Swiper('.swiper2', {
   // Optional parameters
   direction: 'horizontal',
@@ -97,4 +80,3 @@ $(function () {
     pauseOnHover: false, //マウスホバーしても止めない
   });
 });
->>>>>>> 7c2c6f0edff6424dcde568fed24ba34b280c9a1a
