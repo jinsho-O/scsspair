@@ -21,7 +21,10 @@ $(function(){
     },
   });
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5c27cfd3ba848c08129ac1adb56e22535312fc96
   // ここから初めのアニメーション
   setTimeout(function () {
     $('.start p').fadeIn(1600);
@@ -42,10 +45,29 @@ $(function(){
     $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
   });
   //ハンバーガー終わり
+<<<<<<< HEAD
   
   
   
 })
+=======
+  // If we need pagination
+  // pagination: {
+  //   el: '.swiper-pagination',
+  // },
+
+  // // Navigation arrows
+  // navigation: {
+  //   nextEl: '.swiper-button-next',
+  //   prevEl: '.swiper-button-prev',
+  // },
+
+  // // And if we need scrollbar
+  // scrollbar: {
+  //   el: '.swiper-scrollbar',
+  // },
+
+>>>>>>> 5c27cfd3ba848c08129ac1adb56e22535312fc96
 const swiper2 = new Swiper('.swiper2', {
   // Optional parameters
   direction: 'horizontal',
@@ -67,7 +89,6 @@ const swiper2 = new Swiper('.swiper2', {
     el: '.swiper-scrollbar',
   },
 });
-$(function () {
   $('.slider').slick({
     autoplay: true, //自動スクロール
     autoplaySpeed: 0, //自動再生時のスライド切り替えの時間
@@ -79,4 +100,8 @@ $(function () {
     pauseOnFocus: false, //フォーカスしても止めない
     pauseOnHover: false, //マウスホバーしても止めない
   });
+<<<<<<< HEAD
 });
+=======
+})
+>>>>>>> 5c27cfd3ba848c08129ac1adb56e22535312fc96
