@@ -2,4 +2,27 @@
   width: 600px;
   height: 300px;
 }
+
+#Garalley > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer p {
+  text-align: center;
+}
+
+.img img {
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */
