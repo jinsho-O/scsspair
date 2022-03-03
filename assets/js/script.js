@@ -21,10 +21,6 @@ $(function(){
     },
   });
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 5c27cfd3ba848c08129ac1adb56e22535312fc96
   // ここから初めのアニメーション
   setTimeout(function () {
     $('.start p').fadeIn(1600);
@@ -45,12 +41,6 @@ $(function(){
     $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
   });
   //ハンバーガー終わり
-<<<<<<< HEAD
-  
-  
-  
-})
-=======
   // If we need pagination
   // pagination: {
   //   el: '.swiper-pagination',
@@ -67,7 +57,6 @@ $(function(){
   //   el: '.swiper-scrollbar',
   // },
 
->>>>>>> 5c27cfd3ba848c08129ac1adb56e22535312fc96
 const swiper2 = new Swiper('.swiper2', {
   // Optional parameters
   direction: 'horizontal',
@@ -100,8 +89,4 @@ const swiper2 = new Swiper('.swiper2', {
     pauseOnFocus: false, //フォーカスしても止めない
     pauseOnHover: false, //マウスホバーしても止めない
   });
-<<<<<<< HEAD
-});
-=======
 })
->>>>>>> 5c27cfd3ba848c08129ac1adb56e22535312fc96
