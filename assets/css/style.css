@@ -152,7 +152,9 @@ opacity: 0;
     height: 100%;
   }
 
+
 .start p {
+  text-align: center;
 	position: absolute;
     font-size: 50px;
 	left: 50%;
@@ -163,9 +165,22 @@ opacity: 0;
 	width: 70%;
 }
 
+.start p img{
+text-align: center;
+}
+
 #Top{
   width: 100%;
+  background-image: url(../img/ビーチ.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+.text-box img{
+  padding: 100px;
+  box-sizing: border-box;
+}
+
 .text-box{
   display: flex;
   flex-direction: column;
