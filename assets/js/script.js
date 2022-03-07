@@ -1,24 +1,42 @@
 $(function(){
-  const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'vertical',
-    loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
+  $(document).on('ready', function() {
+    $(".vertical-center-3").slick({
+      autoplay: true,//自動的に動き出すか。初期値はfalse。
+      infinite: true,//スライドをループさせるかどうか。初期値はtrue。dots: true,
+      vertical: true,
+      verticalSwiping: true,
+      centerMode: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      dots: true,
+      prevArrow: '<div class="slick2-prev"></div>',//矢印部分PreviewのHTMLを変更
+    nextArrow: '<div class="slick2-next"></div>',//矢印部分NextのHTMLを変更
+    });
+  });
+  $('.slider2').slick({
+    autoplay: true,//自動的に動き出すか。初期値はfalse。
+    infinite: true,//スライドをループさせるかどうか。初期値はtrue。
+    slidesToShow: 4,//スライドを画面に3枚見せる
+    slidesToScroll: 1,//1回のスクロールで3枚の写真を移動して見せる
+    prevArrow: '<div class="slick2-prev"></div>',//矢印部分PreviewのHTMLを変更
+    nextArrow: '<div class="slick2-next"></div>',//矢印部分NextのHTMLを変更
+    dots: true,//下部ドットナビゲーションの表示
+    responsive: [
+      {
+      breakpoint: 769,//モニターの横幅が769px以下の見せ方
+      settings: {
+        slidesToShow: 2,//スライドを画面に2枚見せる
+        slidesToScroll: 2,//1回のスクロールで2枚の写真を移動して見せる
+      }
     },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
+    {
+      breakpoint: 426,//モニターの横幅が426px以下の見せ方
+      settings: {
+        slidesToShow: 1,//スライドを画面に1枚見せる
+        slidesToScroll: 1,//1回のスクロールで1枚の写真を移動して見せる
+      }
+    }
+  ]
   });
 
   // ここから初めのアニメーション
@@ -41,52 +59,6 @@ $(function(){
     $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
   });
   //ハンバーガー終わり
-  // If we need pagination
-  // pagination: {
-  //   el: '.swiper-pagination',
-  // },
-
-  // // Navigation arrows
-  // navigation: {
-  //   nextEl: '.swiper-button-next',
-  //   prevEl: '.swiper-button-prev',
-  // },
-
-  // // And if we need scrollbar
-  // scrollbar: {
-  //   el: '.swiper-scrollbar',
-  // },
-
-const swiper2 = new Swiper('.swiper2', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
-  $('.slider').slick({
-    autoplay: true, //自動スクロール
-    autoplaySpeed: 0, //自動再生時のスライド切り替えの時間
-    speed: 5000, //スライドが流れるスピード
-    arrows: false, //左右の矢印を非表示
-    swipe: false, //スワイプ禁止
-    slidesToShow: 4, //表示するスライドの数
-    cssEase: 'linear', //画像切り替えのアニメーション"linearは等速"
-    pauseOnFocus: false, //フォーカスしても止めない
-    pauseOnHover: false, //マウスホバーしても止めない
-  });
+ 
 })
+
